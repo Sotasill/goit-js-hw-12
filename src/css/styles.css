@@ -50,8 +50,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
-
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -64,7 +62,7 @@ form {
   margin-bottom: 20px;
 }
 
-input[type="text"] {
+input[type='text'] {
   width: 272px;
   height: 40px;
   padding: 10px;
@@ -73,48 +71,44 @@ input[type="text"] {
   border-radius: 4px;
   margin-bottom: 32px;
   background-color: transparent;
-  border: 1px solid #808080; 
-    
-    transition: border-color 0.3s ease; 
-    
+  border: 1px solid #808080;
+
+  transition: border-color 0.3s ease;
 }
 
-
-input[type="text"]:hover {
-  border-color: #000000; 
+input[type='text']:hover {
+  border-color: #000000;
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  color: #FFFFFF;
-  background-color: #4E75FF;
+  color: #ffffff;
+  background-color: #4e75ff;
   width: 91px;
-height: 40px;
-padding: 8px 16px 8px 16px;
-gap: 10px;
-border-radius: 8px;
-opacity: 0px;
-border: none;
-margin-left: 8px;
-transition: all 0.3s ease; 
-
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 0px;
+  border: none;
+  margin-left: 8px;
+  transition: all 0.3s ease;
 }
 
-
-button:hover{
-  background-color: #6C8CFF;
+button:hover {
+  background-color: #6c8cff;
 }
 
 .gallery {
   display: grid;
-    grid-template-columns: repeat(3, 360px); 
-    grid-template-rows: repeat(3, auto); 
-    gap: 24px; 
-    justify-content: center;
-    margin-left: 156px; 
-    margin-right: 156px; 
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: repeat(3, auto);
+  gap: 24px;
+  justify-content: center;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 
 .image-card {
@@ -127,11 +121,11 @@ button:hover{
 
 .image-card img {
   width: 360px;
-    height: 200px; 
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+  height: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .info {
@@ -144,16 +138,14 @@ button:hover{
 .info-item {
   margin-bottom: 5px;
   font-size: 14px;
-  color :#2E2F42;
-  
-font-size: 12px;
-font-weight: 600;
-line-height: 16px;
-letter-spacing: 0.04em;
-text-align: left;
+  color: #2e2f42;
 
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
 }
-
 
 .loader {
   border: 4px solid #f3f3f3;
@@ -166,6 +158,36 @@ text-align: left;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#load-more-button {
+  display: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4e75ff;
+  height: 40px;
+  width: 30%;
+  border-radius: 8px;
+  opacity: 0px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#load-more-button.show {
+  display: block;
+}
+
+
+#load-more-button:hover {
+  background-color: #6c8cff;
 }
