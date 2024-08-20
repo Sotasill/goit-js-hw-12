@@ -8,7 +8,7 @@ let lightbox;
 export function renderImages(images, append = false) {
   const gallery = document.querySelector('.gallery');
   if (!append) {
-    gallery.innerHTML = ''; // Clear existing images if not appending
+    gallery.innerHTML = ''; 
   }
 
   if (images.length === 0) {
@@ -25,7 +25,7 @@ export function renderImages(images, append = false) {
     lightbox = new SimpleLightbox('.gallery a');
   }
 
-  // Smooth scroll after images are added
+  
   smoothScrollToNewImages();
 }
 
@@ -35,9 +35,11 @@ function smoothScrollToNewImages() {
   if (!firstNewCard) return;
 
   const cardHeight = firstNewCard.getBoundingClientRect().height;
+  
+  
   window.scrollBy({
-    top: cardHeight * 2, // Scroll by two card heights
-    behavior: 'smooth'   // Smooth scrolling
+    top: cardHeight * 2,
+    behavior: 'smooth'   
   });
 }
 
